@@ -31,9 +31,16 @@ FILES = ft_toupper.c\
 		ft_putchar_fd.c\
 		ft_putstr_fd.c\
 		ft_putendl_fd.c\
-		ft_putnbr_fd.c
+		ft_putnbr_fd.c\
+		ft_split.c
+BONUS = ft_lstnew.c\
+		ft_lstadd_front.c\
+		ft_lstsize.c\
+		ft_lstlast.c
 
 OBJECTS = $(FILES:.c=.o)
+
+OBJECTS_BONUS = $(BONUS:.c=.o)
 
 FLAGS = -Wall -Wextra -Werror
 
@@ -56,4 +63,7 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: re all clean fclean
+bonus: $(OBJECTS_BONUS) $(OBJECTS)
+		$(LIB) $(NAME) $(OBJECTS) $(OBJECTS_BONUS)
+
+.PHONY: re all clean fclean bonus
