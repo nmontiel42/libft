@@ -6,9 +6,11 @@
 /*   By: nmontiel <montielarce9@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 10:49:40 by nmontiel          #+#    #+#             */
-/*   Updated: 2023/04/19 13:13:41 by nmontiel         ###   ########.fr       */
+/*   Updated: 2023/05/04 12:16:58 by nmontiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_tolower(int c)
 {

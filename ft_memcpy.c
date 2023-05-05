@@ -6,10 +6,11 @@
 /*   By: nmontiel <montielarce9@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 17:53:25 by nmontiel          #+#    #+#             */
-/*   Updated: 2023/04/21 16:17:05 by nmontiel         ###   ########.fr       */
+/*   Updated: 2023/05/04 12:15:54 by nmontiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdlib.h>
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)

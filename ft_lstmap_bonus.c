@@ -1,31 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_lstmap_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmontiel <montielarce9@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/18 12:10:43 by nmontiel          #+#    #+#             */
-/*   Updated: 2023/05/04 12:15:46 by nmontiel         ###   ########.fr       */
+/*   Created: 2023/04/28 16:05:40 by nmontiel          #+#    #+#             */
+/*   Updated: 2023/05/04 12:34:03 by nmontiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
 
-void	*ft_memchr(const void *s, int c, size_t n)
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	size_t			i;
-	unsigned char	*ptr_s;
+	t_list	*newlist;
+	t_list	*actual;
 
-	i = 0;
-	ptr_s = (unsigned char *)s;
-	while (i < n)
+	if (!lst)
+		return (NULL);
+	newlist = 0;
+	while (lst)
 	{
-		if (ptr_s[i] == (unsigned char)c)
-			return (&ptr_s[i]);
-		i++;
+		actual = ft_lstnew(f(lst->content));
+		if (actual)
+		{
+			ft_lstadd_back(&newlist, actual);
+			lst = lst->next;
+		}
+		else
+		{
+			ft_lstclear(&newlist, del);
+			return (0);
+		}
 	}
-	return (0);
+	return (newlist);
 }

@@ -6,7 +6,7 @@
 /*   By: nmontiel <montielarce9@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 10:15:39 by nmontiel          #+#    #+#             */
-/*   Updated: 2023/04/24 10:47:05 by nmontiel         ###   ########.fr       */
+/*   Updated: 2023/05/04 13:06:29 by nmontiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,7 @@
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*s_copy;
-	size_t	i;
 
-	i = 0;
 	if (!s)
 		return (0);
 	if ((size_t)ft_strlen(s) < start)
@@ -32,5 +30,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	s_copy[len] = '\0';
 	return (s_copy);
 }
-
-//alojame memoria para algo vacio, con null da error pq no alo ja memoria 

@@ -6,10 +6,11 @@
 /*   By: nmontiel <montielarce9@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/21 12:23:41 by nmontiel          #+#    #+#             */
-/*   Updated: 2023/04/21 12:28:28 by nmontiel         ###   ########.fr       */
+/*   Updated: 2023/05/04 12:16:13 by nmontiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdlib.h>
 
 char	*ft_strdup(const char *s1)

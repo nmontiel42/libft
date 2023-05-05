@@ -6,9 +6,11 @@
 /*   By: nmontiel <montielarce9@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 15:22:57 by nmontiel          #+#    #+#             */
-/*   Updated: 2023/04/21 16:11:37 by nmontiel         ###   ########.fr       */
+/*   Updated: 2023/05/04 12:16:24 by nmontiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_strlen(const char *x)
 {

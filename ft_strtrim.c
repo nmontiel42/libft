@@ -6,11 +6,10 @@
 /*   By: nmontiel <montielarce9@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 13:41:50 by nmontiel          #+#    #+#             */
-/*   Updated: 2023/04/24 19:23:52 by nmontiel         ###   ########.fr       */
+/*   Updated: 2023/05/04 12:16:41 by nmontiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// borra del principio y del final de un string lo que diga otro string
 #include "libft.h"
 #include <stdlib.h>
 

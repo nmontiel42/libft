@@ -6,10 +6,11 @@
 /*   By: nmontiel <montielarce9@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 12:14:01 by nmontiel          #+#    #+#             */
-/*   Updated: 2023/04/19 15:14:53 by nmontiel         ###   ########.fr       */
+/*   Updated: 2023/05/04 12:15:51 by nmontiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdio.h>
 #include <string.h>
 

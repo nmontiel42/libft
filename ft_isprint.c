@@ -6,9 +6,11 @@
 /*   By: nmontiel <montielarce9@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 15:13:46 by nmontiel          #+#    #+#             */
-/*   Updated: 2023/04/21 15:33:38 by nmontiel         ###   ########.fr       */
+/*   Updated: 2023/05/04 13:20:41 by nmontiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isprint(int c)
 {
